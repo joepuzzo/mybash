@@ -56,7 +56,8 @@ git_prompt() {
 }
 
 #export PS1="\[\033[90;1m\]\w\[\033[m\] \033[32m\]\$(git_prompt)\[\033[00m\]$ "
-export PS1="\$(git_prompt)\[\033[00m\]$ "
+#export PS1="\$(git_prompt)\[\033[00m\]$ "
+export PS1="\[\033[90;1m\]\W\[\033[m\] \$(git_prompt)\[\033[00m\]$ "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 alias ls='ls -GFh'
